@@ -1,6 +1,7 @@
 Le but du challenge est de s'authentifier auprès d'un petit
 serveur TCP qui demande une signature en réponse à un challenge
-([module hash_based.py](hash_based.py)).
+(modules fournis [hash_based.py](hash_based.py) et
+[client_lib.py](client_lib.py)).
 
 On peut résumer le protocole de cette manière:
 
@@ -13,7 +14,7 @@ On peut résumer le protocole de cette manière:
 * le client envoie la concaténation de ces hashs au serveur
 
 Les clés secrètes ne sont pas connus mais une capture Wireshark
-est fournis contenant 5 échanges.
+est fournie contenant 5 échanges.
 
 Or, si on connaît la valeur de `sha256^A(sk[i])` il suffit d'appliquer
 un sha256 pour retrouver `sha256^(A+1)(sk[i])` et ainsi de suite.

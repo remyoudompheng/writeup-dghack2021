@@ -54,4 +54,4 @@ challenge. Un petit calcul montre qu'on a 1 chance sur 500 de gagner:
 0.001971222333104382
 ```
 
-Script solution: [solver.py]
+Script solution: [solver.py](solver.py)

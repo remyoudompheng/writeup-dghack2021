@@ -4,7 +4,7 @@ a désigné 4 de ses camarades (ordonnés), et si cet élève
 retrouve dans sa classe son camarade numéro 1 (resp. 2, 3, 4)
 on attribue à l'arrangement 20 points (resp. 15, 10, 5).
 
-Voir le fichier [dghack2021-ecole-repartition.json].
+Voir le fichier [dghack2021-ecole-repartition.json](dghack2021-ecole-repartition.json).
 
 Le but est de trouver un arrangement donnant au moins 2950 points.
 
@@ -15,7 +15,7 @@ en 3 classes de taille égale:
 for i := range s.classe {
     s.classe[i] = uint32(i % 3)
 }
-``̀
+```
 
 ce qui donne un score initial de 1645.
 
@@ -57,5 +57,6 @@ On obtient une solution quasiment immédiatement (score=3015):
   [3,7,9,15,17,19,21,30,31,37,39,40,43,44,46,51,52,55,57,62,68,71,72,74,78,79,81,82,85,86],
   [1,5,6,10,11,13,18,24,25,26,27,28,35,42,45,47,48,49,56,58,59,61,63,65,69,75,76,77,88,89]
 ]
-``̀
+```
 
+Programme complet: [ecolesolver.go](ecolesolver.go)
